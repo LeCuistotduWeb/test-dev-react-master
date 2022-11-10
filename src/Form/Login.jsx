@@ -5,7 +5,7 @@ import './RegisterForm.css';
 
 const Login = () => {
 
-  const { errors, isValid, onChange, values } = useAuthForm()
+  const { errors, onChange, values } = useAuthForm()
   const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = (e) => {
