@@ -1,20 +1,9 @@
-.RegisterForm .form-item {
-    margin-bottom: 15px;
+.LoginForm input,
+.RegisterForm input {
+    width: 100%;
 }
 
-.RegisterForm .form-item label {
-    display: block;
-}
-
-.RegisterForm .form-item,.has-error input {
-    border-color: red;
-}
-
-.RegisterForm .form-item .error-message {
-    display: block;
-}
-.RegisterForm .form-item .error-message .error-item {
-    color: red;
-    font-size: 10px;
+.btn-forgot {
+    text-align: right;
     display: block;
 }

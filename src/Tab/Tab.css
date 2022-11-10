@@ -1,0 +1,56 @@
+.tab-container {
+    --color-bg: #eeeeee;
+    --color-border: #ccc;
+    --color-bg-active: #fff;
+    --color-bg-active-hover: #eeeeee;
+    --color-bg-hover: #a7a7a7;
+    --color-tab-title: #787878;
+    --color-tab-title-active: #50c2d1;
+    --color-tab-title-active-hover: #787878;
+
+    border: var(--color-border) 1px solid;
+}
+
+
+.tab-container .tab-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tab-container .tab-header button {
+    background-color: var(--color-bg);
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 100%;
+    color: var(--color-tab-title);
+    font-weight: bold;
+    border: none;
+}
+
+.tab-container .tab-header button:hover,
+.tab-container .tab-header button.active:hover {
+    background-color: var(--color-bg-hover);
+}
+
+.tab-container .tab-header button.active {
+    background-color: var(--color-bg-active);
+    color: var(--color-tab-title-active)
+}
+
+.tab-container .tab-header button.active:hover {
+    background: var(--color-bg-active-hover);
+    color: var(--color-tab-title-active-hover);
+}
+
+.tab-container .tab-content {
+    display: none;
+    padding: 1rem 2rem;
+    border: none;
+}
+
+.tab-container .tab-content.active {
+    display: block;
+}
